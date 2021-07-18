@@ -1,0 +1,33 @@
+<wicket:extend xmlns:wicket="http://www.w3.org/1999/xhtml" xmlns:layout="http://www.w3.org/1999/xhtml">
+    <form wicket:id="form" layout:fragment="content" class="container">
+        <div class="page-header" id="banner">
+            <div class="row">
+                <div class="col-md-7">
+                    <h1>Edit Quisioner</h1>
+
+                    <p class="lead">Sekolah Tinggi Musik Bandung</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div wicket:id="containerid">
+                <table class="table table-bordered table-striped">
+                    <thead>
+                    <tr>
+                        <th style="text-align: center">No</th>
+                        <th style="text-align: center">Quisioner</th>
+                        <th style="text-align: center">Keterangan</th>
+                        <th style="text-align: center">Aktivasi</th>
+                    </tr>
+                    </thead>
+                    <tr wicket:id="datarow">
+                        <td style="text-align: center" wicket:id="no"></td>
+                        <td><textarea wicket:id="question" type="text" style="width: 100%; padding: .5em 1em;"></textarea></td>
+                        <td><textarea wicket:id="ket" type="text" style="width: 100%; padding: .5em 1em;"></textarea></td>
+                        <td style="text-align: center"><input type="checkbox" wicket:id="check" /></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </form>
+</wicket:extend>

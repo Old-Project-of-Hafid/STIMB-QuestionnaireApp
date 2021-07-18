@@ -1,0 +1,43 @@
+<wicket:extend xmlns:layout="http://www.w3.org/1999/xhtml" xmlns:wicket="http://www.w3.org/1999/xhtml">
+    <form wicket:id="form" layout:fragment="content" class="container">
+        <div class="page-header" id="banner">
+            <div class="row">
+                <div class="col-md-7">
+                    <h1>Cetak Ringkasan Laporan Quisioner</h1>
+
+                    <p class="lead">Sekolah Tinggi Musik Bandung</p>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="col-md-12">
+                Nama Matakuliah : <input wicket:id="matakuliahsearch" type="text"/>
+                <button class="btn btn-sm" wicket:id="klik">Cari</button>
+            </div>
+        </div>
+        <div class="row">
+            <div wicket:id="containerid">
+                <table class="table table-bordered table-striped">
+                    <thead>
+                    <tr>
+                        <th style="text-align: center">No</th>
+                        <th style="text-align: center">Kode</th>
+                        <th style="text-align: center">Nama Matakuliah</th>
+                        <th style="text-align: center">SKS</th>
+                        <th style="text-align: center">Tahun Ajaran</th>
+                        <th style="text-align: center">Semester</th>
+                        <th style="text-align: center">Dosen</th>
+                        <th style="text-align: center">Jadwal</th>
+                        <th style="text-align: center">Cetak</th>
+                    </tr>
+                    </thead>
+                    <tr wicket:id="rowsKrs">
+                        <td style="text-align: center" wicket:id="dataRowKrs"></td>
+                        <td style="text-align: center"><button class="btn btn-sm" wicket:id="cetak">cetak</button></td>
+                    </tr>
+                </table>
+                <span wicket:id="pagingNavigator">message will be here</span><br>
+            </div>
+        </div>
+    </form>
+</wicket:extend>
